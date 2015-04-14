@@ -1,7 +1,7 @@
 import csv
 import json
 
-csvfile = open('san_francisco.csv', 'rU')
+csvfile = open('san_francisco_data.csv', 'rU')
 jsonfile = open('san_francisco.json', 'w')
 
 fieldnames = ("Hour","Fare")

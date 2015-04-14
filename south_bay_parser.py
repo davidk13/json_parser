@@ -1,8 +1,8 @@
 import csv
 import json
 
-csvfile = open('napa_data.csv', 'rU')
-jsonfile = open('napa.json', 'w')
+csvfile = open('south_bay_data.csv', 'rU')
+jsonfile = open('south_bay.json', 'w')
 
 fieldnames = ("Hour","Fare")
 reader = csv.DictReader( csvfile, fieldnames)
