@@ -1,12 +1,14 @@
 import csv
 import json
 
-csvfile = open('santa_cruz_data.csv', 'rU')
+
 jsonfile = open('santa_cruz.json', 'w')
+reader = csv.reader(open('santa_cruz_data.csv', 'rU'))
 
-fieldnames = ("Hour","Fare")
-reader = csv.DictReader( csvfile, fieldnames)
+result = {}
 for row in reader:
-    json.dump(row, jsonfile)
-    jsonfile.write('\n')
+    key = row[0]
+    result[key] = row[1]
+    #print result 
 
+json.dump(result, jsonfile)

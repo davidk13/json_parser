@@ -1,12 +1,14 @@
 import csv
 import json
 
-csvfile = open('napa_data.csv', 'rU')
+
 jsonfile = open('napa.json', 'w')
+reader = csv.reader(open('napa_data.csv', 'rU'))
 
-fieldnames = ("Hour","Fare")
-reader = csv.DictReader( csvfile, fieldnames)
+result = {}
 for row in reader:
-    json.dump(row, jsonfile)
-    jsonfile.write('\n')
+    key = row[0]
+    result[key] = row[1]
+    #print result 
 
+json.dump(result, jsonfile)

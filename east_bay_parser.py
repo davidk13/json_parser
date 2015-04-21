@@ -2,8 +2,8 @@ import csv
 import json
 
 
-jsonfile = open('south_bay.json', 'w')
-reader = csv.reader(open('south_bay_data.csv', 'rU'))
+jsonfile = open('east_bay.json', 'w')
+reader = csv.reader(open('east_bay_data.csv', 'rU'))
 
 result = {}
 for row in reader:
