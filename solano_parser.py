@@ -2,8 +2,8 @@ import csv
 import json
 
 
-jsonfile = open('san_francisco.json', 'w')
-reader = csv.reader(open('san_francisco_csv.csv', 'rU'))
+jsonfile = open('solano.json', 'w')
+reader = csv.reader(open('solano_csv.csv', 'rU'))
 
 result = {}
 for row in reader:

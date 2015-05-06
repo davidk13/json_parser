@@ -3,7 +3,7 @@ import json
 
 
 jsonfile = open('marin.json', 'w')
-reader = csv.reader(open('marin_data.csv', 'rU'))
+reader = csv.reader(open('marin_csv.csv', 'rU'))
 
 result = {}
 for row in reader:

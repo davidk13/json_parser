@@ -3,7 +3,7 @@ import json
 
 
 jsonfile = open('napa.json', 'w')
-reader = csv.reader(open('napa_data.csv', 'rU'))
+reader = csv.reader(open('napa_csv.csv', 'rU'))
 
 result = {}
 for row in reader:

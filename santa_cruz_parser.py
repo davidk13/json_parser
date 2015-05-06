@@ -3,7 +3,7 @@ import json
 
 
 jsonfile = open('santa_cruz.json', 'w')
-reader = csv.reader(open('santa_cruz_data.csv', 'rU'))
+reader = csv.reader(open('santa_cruz_csv.csv', 'rU'))
 
 result = {}
 for row in reader:
